@@ -1,6 +1,19 @@
 # Visual Studio 2015 user specific files
 .vs/
 
+# Do not ignore current project's `.uproject`.
+!/*.uproject
+
+# Do not ignore git files in the root of the repo.
+!/.git*
+
+# Only allow .uasset and .umap files from /Content dir.
+!/Content/**/*.uasset
+!/Content/**/*.umap
+
+# Any file in /RawContent dir will be managed by git lfs.
+!/RawContent/**/*
+
 # Compiled Object files
 *.slo
 *.lo
